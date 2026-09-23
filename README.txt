@@ -1,4 +1,4 @@
-Та битгий уурлаарай — Web V2.0 Beta 3.1 — Extension-Safe PWA Fix
+Та битгий уурлаарай — Web V2.0 Beta 3.2 — Unique PWA Identity Protection
 
 Open index.html in a modern browser. No installation or internet connection is required.
 
@@ -31,8 +31,25 @@ Beta 3.1 fix:
 - cross-origin browser-extension requests are never written to the game cache;
 - cache identity bumped so GitHub Pages can activate the corrected worker.
 
+Beta 3.2 identity protection:
+- permanent manifest identity: /TaBitgiiUurlaraai/pwa-v2;
+- launch URL and app scope are explicitly limited to /TaBitgiiUurlaraai/;
+- service-worker registration explicitly stays inside this game folder;
+- the green APP badge appears only for this game's marked standalone launch,
+  so a different PWA shell cannot be mistaken for this installed game.
+
 PWA installation note:
 The game must be opened through HTTPS (for example GitHub Pages) or localhost/WAMP.
 Opening index.html directly still runs the game, but browsers do not allow service-worker installation from file:// pages.
+
+Deployment path:
+This build intentionally targets https://bataa21.github.io/TaBitgiiUurlaraai/.
+For localhost testing, serve it at http://localhost/TaBitgiiUurlaraai/ rather than at the server root.
+
+Important Edge note:
+An already-installed PWA with a root scope such as / can still capture links before this page opens.
+Beta 3.2 gives this game a separate permanent install identity, but it cannot change another app's scope.
+If Plane Radar captures this URL, disable its supported-link handling, narrow Plane Radar's manifest scope,
+or uninstall it while testing this game in a normal Edge tab.
 
 The original uploaded web edition was not modified.
