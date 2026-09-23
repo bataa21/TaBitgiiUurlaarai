@@ -1,4 +1,4 @@
-Та битгий уурлаарай — Web V2.0 Beta 3 — Installable PWA Edition
+Та битгий уурлаарай — Web V2.0 Beta 3.1 — Extension-Safe PWA Fix
 
 Open index.html in a modern browser. No installation or internet connection is required.
 
@@ -25,6 +25,11 @@ Beta 3 Installable PWA Edition:
 - standalone app mode with matching theme colors;
 - automatic update detection and a visible Update button;
 - winner statistics for rolls, captures, plane rides, taxi rides and duration.
+
+Beta 3.1 fix:
+- the service worker now ignores chrome-extension:// and other unsupported schemes;
+- cross-origin browser-extension requests are never written to the game cache;
+- cache identity bumped so GitHub Pages can activate the corrected worker.
 
 PWA installation note:
 The game must be opened through HTTPS (for example GitHub Pages) or localhost/WAMP.
