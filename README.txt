@@ -1,4 +1,4 @@
-Та битгий уурлаарай — Web V2.0 Beta 3.2.1 — Launch Path Fix
+Та битгий уурлаарай — Web V2.0 Beta 3.2.4 — Pisa Tower Easy Select
 
 Open index.html in a modern browser. No installation or internet connection is required.
 
@@ -46,6 +46,24 @@ Beta 3.2.1 launch-path fix:
 - manifest ID, start URL and scope now resolve relative to the folder containing the game;
 - this prevents an installed app from accidentally opening the GitHub Pages publisher root;
 - the same package works from the GitHub repository folder and a localhost folder.
+
+Beta 3.2.2 Pisa Tower tap fix:
+- a legal red pawn temporarily rises above a stacked Pisa Tower when it can be selected;
+- non-selectable pawns no longer intercept the tap during the human selection step;
+- the pulse animation preserves each pawn's sideways tower offset;
+- the real arrival order and oldest-pawn-at-the-bottom rule remain unchanged.
+
+Beta 3.2.3 winner popup clarity:
+- removed the extra sentence beneath the winner title;
+- rolls, captures, flights and taxi rides now belong only to the winning player;
+- match duration remains the duration of the whole game and is labelled clearly;
+- older saved games remain compatible and begin individual counters from zero.
+
+Beta 3.2.4 Pisa Tower easy selection:
+- hovering a selectable Pisa Tower makes the legal red pawn pop upward above the stack;
+- clicking anywhere on that tower cell selects the red pawn;
+- on touch devices, tapping the tower cell selects the red pawn directly;
+- normal Pisa stacking order and protection rules remain unchanged.
 
 Important Edge note:
 An already-installed PWA with a root scope such as / can still capture links before this page opens.
