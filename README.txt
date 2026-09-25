@@ -1,6 +1,9 @@
-Та битгий уурлаарай — Web V2.0 Beta 3.2.4 — Pisa Tower Easy Select
+Та битгий уурлаарай — Web V2.0 Beta 3.2.5 — Winner Popup X Button
 
 Open index.html in a modern browser. No installation or internet connection is required.
+
+Beta 3.2.5 adds a red X button to the winner popup. Closing it reveals the final
+board while keeping the completed game locked until a new game is started.
 
 Beta 1 gameplay foundation retained:
 - one shared die that travels to the next player;

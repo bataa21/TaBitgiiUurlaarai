@@ -1,4 +1,4 @@
-const CACHE='tbu-web-v2-beta3-2-4-v7';
+const CACHE='tbu-web-v2-beta3-2-5-v8';
 const CORE=[
   './','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png',
   './assets/diceSound.mp3','./assets/pawn-red.png','./assets/pawn-blue.png','./assets/pawn-green.png','./assets/pawn-yellow.png',
